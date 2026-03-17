@@ -14,12 +14,124 @@
 - `funnel.csv` - результат (визиты с категориями покупок)
 - `reports/statistics_20260316_1603.json` - детальная статистика
 
+## Клонировать проект на компьютер
+
+## Структура проекта
+python_path/
+├── Downloads/ ← сюда положить файлы из архива (purchase_log.txt, visit_log.csv)
+├── data/ ← сюда положить остальные файлы из архива
+├── hw_filesystem_v5.py
+├── funnel.csv ← результат обработки
+├── reports/ ← статистика
+│ └── statistics_*.json
+└── README.md
+## Подготовка данных
+1. Скачать архив с домашним заданием (ссылка в материалах к лекции)
+2. Распаковать архив
+3. Скопировать папку `Downloads` в `python_path/`
+4. Скопировать папку `data` в `python_path/`
+
+После копирования структура должна быть такой:
+python_path/
+├── Downloads/
+│ ├── purchase_log.txt
+│ └── visit_log.csv
+├── data/
+│ ├── file_1.csv
+│ ├── file_2.csv
+│ ├── file_3.csv
+│ └── more_data/
+│     ├── file_4.csv
+│     └── file_5.csv
+├── hw_filesystem_v5.py
+└── ...
+
+text
+
+## Запуск
+
+```bash
+cd python_path
+python hw_filesystem_v5.py
+
+Результаты
+funnel.csv — визиты с покупками (добавлена колонка category)
+
+reports/statistics_*.json — статистика обработки
+
+Полученные метрики:
+Всего визитов: 199,999
+
+Визиты с покупками: 13,798
+
+Уникальных покупателей: 13,533
+
+Конверсия: 6.90%
+
 ## Как запустить
 ```bash
-python hw_filesystem.py
+python hw_filesystem_v.5.py
 
 Важные особенности
 ✅ Используется модуль csv для корректной обработки CSV
 ✅ Поддержка UTF-8 (файлы открываются в Excel без кракозябр)
 ✅ Построчная обработка больших файлов
 ✅ Сохранение статистики в JSON
+
+
+# Домашнее задание: Работа с файловой системой
+
+## 📁 Структура проекта
+python_path/
+├── Downloads/ ← сюда положить файлы из архива (purchase_log.txt, visit_log.csv)
+├── data/ ← сюда положить остальные файлы из архива
+├── hw_filesystem_v5.py
+├── funnel.csv ← результат обработки
+├── reports/ ← статистика
+│ └── statistics_*.json
+└── README.md
+
+text
+
+## 📥 Подготовка данных
+
+1. Скачайте архив с домашним заданием (ссылка в материалах к лекции)
+2. Распакуйте архив
+3. Скопируйте папку `Downloads` в `python_path/`
+4. Скопируйте папку `data` в `python_path/`
+
+После копирования структура должна быть такой:
+python_path/
+├── Downloads/
+│ ├── purchase_log.txt
+│ └── visit_log.csv
+├── data/
+│ ├── file_1.csv
+│ ├── file_2.csv
+│ ├── file_3.csv
+│ └── more_data/
+│ ├── file_4.csv
+│ └── file_5.csv
+├── hw_filesystem_v5.py
+└── ...
+
+text
+
+## Запуск
+
+```bash
+cd python_path
+python hw_filesystem_v5.py
+Результаты
+funnel.csv — визиты с покупками (добавлена колонка category)
+
+reports/statistics_*.json — статистика обработки
+
+Полученные метрики:
+Всего визитов: 199,999
+
+Визиты с покупками: 13,798
+
+Уникальных покупателей: 13,533
+
+Конверсия: 6.90%
