@@ -15,6 +15,7 @@
 - `reports/statistics_*.json` - детальная статистика
 
 ## Структура проекта
+```bash
 python_path/
 ├── Downloads/
 │ ├── purchase_log.txt # файлы из архива ДЗ
